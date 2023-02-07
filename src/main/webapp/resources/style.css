@@ -1,0 +1,601 @@
+/* Init */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  font-size: 15px;
+  background-color:AliceBlue;
+}
+
+html {
+  overflow-y: scroll;
+}
+
+ul,
+ol,
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+/* Layout */
+#wrap {
+  min-width: 1024px;
+  overflow: hidden;
+}
+.wrap {
+  width: 1024px;
+  margin: 0 auto;
+}
+
+#header {
+  width: 100%;
+}
+
+#contents {
+  width: 100%;
+}
+
+/* LOGO */
+#logo {
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+}
+#logo a {
+  width: 100%;
+  color: #1366dc;
+}
+
+/* Util Menu */
+#util {
+  width: auto;
+  text-align: right;
+  margin-top: 20px;
+}
+
+#util > li {
+  display: inline-block;
+  margin-left: 10px;
+}
+
+/* Navigation */
+#menu {
+  width: 100%;
+  display: block;
+  border: 1px solid #333;
+  margin-top: 40px;
+  text-align: center;
+}
+
+.menu {
+  display: inline-block;
+}
+
+.menu > li {
+  float: left;
+  text-align: center;
+}
+
+.menu > li > a {
+  display: inline-block;
+  padding: 20px 40px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.menu > li > a:hover {
+  color: #00b050;
+}
+
+.activeMenu {
+	color:#00b050;
+}
+
+/* Main Visual */
+#boardView {
+  width: 100%;
+  margin-top: 30px;
+}
+
+/* Sub Page */
+#sub {
+  width: 100%;
+}
+
+/* LOGIN PAGE */
+#login {
+  width: 30%;
+  margin: 0 auto;
+  margin-top: 30px;
+}
+#login > .subTitle {
+  width: 100%;
+  text-align: center;
+  font-size: 22px;
+  font-weight: normal;
+}
+
+#login > form {
+  float: left;
+  width: 100%;
+  margin-top: 30px;
+}
+
+#login > form > ul {
+  float: left;
+  width: 100%;
+  height: 30px;
+  margin-bottom: 10px;
+}
+
+#login > form > ul > li {
+  float: left;
+  height: 100%;
+}
+
+#login > form > ul > li:first-child {
+  float: left;
+  width: 30%;
+}
+
+#login > form > ul > li:first-child > label {
+  float: left;
+  width: 100%;
+  text-align: center;
+  font-size: 17px;
+}
+
+#login > form > ul > li:last-child {
+  float: left;
+  width: 60%;
+}
+
+#login > form > ul > li:last-child > input {
+  float: left;
+  width: 100%;
+  height: 100%;
+  padding: 0 5px;
+}
+
+#login .btnArea {
+  width: 100%;
+  display: inline-block;
+  text-align: center;
+}
+
+#login .btnArea > p {
+  width: 100%;
+  margin-top: 10px;
+}
+#login .btnArea > p > button {
+  padding: 5px 20px;
+}
+
+/* JOIN PAGE */
+
+#join {
+  width: 30%;
+  margin: 0 auto;
+  margin-top: 30px;
+}
+#join > .subTitle {
+  width: 100%;
+  text-align: center;
+  font-size: 22px;
+  font-weight: normal;
+}
+
+#join > form {
+  float: left;
+  width: 100%;
+  margin-top: 30px;
+}
+
+#join > form > ul {
+  float: left;
+  width: 100%;
+  height: 30px;
+  margin-bottom: 10px;
+}
+
+#join > form > ul > li {
+  float: left;
+  height: 100%;
+}
+
+#join > form > ul > li:first-child {
+  float: left;
+  width: 30%;
+}
+
+#join > form > ul > li:first-child > label {
+  float: left;
+  width: 100%;
+  text-align: center;
+  font-size: 17px;
+}
+
+#join > form > ul > li:last-child {
+  float: left;
+  width: 60%;
+}
+
+#join > form > ul > li:last-child > input {
+  float: left;
+  width: 100%;
+  height: 100%;
+  padding: 0 5px;
+}
+
+#join .btnArea {
+  width: 100%;
+  display: inline-block;
+  text-align: center;
+}
+
+#join .btnArea > p {
+  display: inline-block;
+  width: 100%;
+  margin-top: 10px;
+}
+#join .btnArea > p > button {
+  padding: 5px 20px;
+}
+
+/* Board List */
+#boardList {
+  width: 100%;
+}
+
+.boardList {
+  width: 80%;
+  text-align: center;
+  margin: 0 auto;
+  border-top: 1px solid #b0cef8;
+  margin-top: 30px;
+  font-size:14px !important;
+}
+
+.boardList thead tr th {
+  line-height: 30px;
+}
+
+.boardList tbody tr {
+  border-bottom: 1px solid #bfbfbf;
+}
+
+.boardList tbody tr td {
+  line-height: 40px;
+}
+
+.boardList tbody tr td .boardIndex {
+  color: #1366dc;
+  font-weight: bold;
+}
+
+.boardList tbody tr td:nth-child(2) {
+  padding-left:20px;
+  text-align: left;
+}
+
+#pagination {
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+}
+
+
+#pagination ul {
+  display: inline-block;
+}
+
+#pagination ul li {
+  display: inline-block;
+}
+
+#pagination ul li a {
+  font-size: 16px;
+}
+
+#pagination ul li a.currentPage {
+  font-weight: bold;
+}
+
+/* Search */
+#search {
+  width: 100%;
+  position: relative;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.searchArea {
+  width: 100%;
+  text-align: center;
+}
+
+.searchArea > form > div {
+  display: inline-block;
+  height: 30px;
+}
+
+.searchCategory select {
+  height: 100%;
+  font-size: 16px;
+  text-align: center;
+}
+
+.searchContents input {
+  height: 100%;
+  font-size: 16px;
+  padding: 0 5px;
+}
+
+.searchBtn button {
+  height: 100%;
+  padding: 0 10px;
+}
+
+.writeBtn {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+}
+.writeBtn button {
+  padding: 5px 15px;
+}
+
+#boardWrite {
+  float: left;
+  width: 100%;
+  margin-top: 30px;
+}
+
+#boardWrite * {
+  float: left;
+}
+
+.boardWriteForm {
+  width: 100%;
+}
+
+.boardWriteForm > div {
+  width: 100%;
+  border-top: 1px solid #bfbfbf;
+}
+
+.boardWriteHead {
+  padding: 15px 0;
+}
+
+.boardWriteIndex {
+  width: 20%;
+}
+
+.boardWriteIndex select {
+  font-size: 18px;
+  height: 30px !important;
+}
+
+.boardWriteTitle {
+  width: 60%;
+}
+
+.boardWriteTitle label {
+  padding-right: 10px;
+  font-size: 18px;
+}
+
+.boardWriteTitle input {
+  font-size: 22px;
+  width: 80%;
+  padding: 0 10px;
+}
+
+.boardWriteType {
+  width: 20%;
+}
+
+.boardWriteType select {
+  font-size: 16px;
+  height: 30px !important;
+}
+
+.boardWriteBody {
+  padding: 15px 0;
+}
+
+.boardWriteFile {
+  width: 100%;
+}
+.boardWriteFile label {
+  width: 25%;
+  padding-right: 10px;
+  text-align: right;
+}
+.boardWriteContents {
+  width: 100%;
+  margin-top: 10px;
+}
+
+.boardWriteContents label {
+  width: 25%;
+  padding-right: 10px;
+  text-align: right;
+}
+
+.boardWriteContents textarea {
+  width: 70%;
+  height: 100%;
+  resize: none;
+  overflow-y: scroll;
+  padding: 5px;
+}
+
+.boardWriteFooter {
+  width: 100%;
+}
+.boardWriteButton {
+  width: 100%;
+  padding: 15px 0;
+}
+
+.boardWriteButton button {
+  float: right !important;
+  padding: 5px 10px;
+}
+
+/* boardView */
+#boardView {
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 30px;
+}
+
+.boardViewTitle {
+  float: left;
+  width: 100%;
+  padding: 10px 0;
+  border-top: 1px solid #bfbfbf;
+}
+
+.boardViewTitle h2 {
+  float: left;
+  width: 100%;
+}
+
+.boardViewInfo {
+  float: left;
+  width: 100%;
+  padding-left: 10px;
+}
+
+.boardViewInfo span {
+  float: left;
+  padding-right: 10px;
+}
+
+.boardViewContents {
+  float: left;
+  width: 100%;
+  border-top: 1px solid #bfbfbf;
+  padding-top: 10px;
+}
+
+.boardViewImage {
+  float: left;
+  width: 100%;
+}
+
+.boardViewImage img {
+  float: left;
+  width: 50%;
+}
+
+.boardViewContents pre {
+  float: left;
+  width: 100%;
+  font-size: 18px;
+  white-space: pre-wrap;
+}
+
+.boardViewComment {
+  float: left;
+  width: 100%;
+  border-top: 1px solid #bfbfbf;
+  margin-top: 10px;
+  padding-top: 10px;
+}
+
+.boardViewComment h3 {
+  float: left;
+}
+
+.boardViewControl {
+  float: right;
+}
+
+.boardViewControl ul {
+  float: right;
+}
+
+.boardViewControl ul li {
+  float: left;
+  padding: 0 5px;
+}
+
+.boardViewControl ul li:last-child {
+  padding-right: 0px;
+}
+
+.commentList {
+  float: left;
+  width: 100%;
+  margin-top: 10px;
+}
+
+.comment {
+  float: left;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.comment .commentWriter {
+  float: left;
+}
+
+.comment .commentDate {
+  float: left;
+  margin-left: 10px;
+}
+
+.comment .commentContents {
+  float: left;
+  width: 100%;
+}
+
+.writeComment {
+  float: left;
+  width: 100%;
+  padding-bottom: 100px;
+}
+
+.commentContents {
+  float: left;
+  width: 85%;
+  padding-right: 10px;
+}
+
+.commentContents input {
+  float: left;
+  width: 100%;
+  line-height: 25px;
+  padding: 0 5px;
+}
+
+.commentSubmit {
+  float: left;
+  width: 15%;
+  padding-left: 10px;
+}
+
+.commentSubmit button {
+  float: left;
+  width: 100%;
+  height: 29px;
+}
